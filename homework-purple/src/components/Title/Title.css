@@ -1,0 +1,10 @@
+.title{
+    /*font-family: Poppins;*/
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 16px;
+    align-items: start;
+    display: flex;
+}

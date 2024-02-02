@@ -1,7 +1,6 @@
 import './App.css'
 import Title from "./components/Title/Title.jsx";
 import Paragraph from "./components/Paragraph/Paragraph.jsx";
-import Logo from "./components/Logo/Logo.jsx";
 import Header from "./components/Header/Header.jsx";
 import FormMain from "./components/FormMain/FormMain.jsx";
 import MenuHeader from "./components/MenuHeader/MenuHeader.jsx";
@@ -21,11 +20,7 @@ function App() {
     ]
     return (
         <>
-            <Header>
-                <Logo/>
-                <MenuHeader/>
-            </Header>
-
+            <Header/>
             <Title>{data[0].title}</Title>
             {/*<Paragraph isSmall>{data[0].paragraph}</Paragraph>*/}
             <Paragraph>{data[0].paragraph}</Paragraph>

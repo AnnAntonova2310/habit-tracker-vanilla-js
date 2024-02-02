@@ -9,3 +9,11 @@
 .active{
     color: #fff
 }
+
+.link:hover{
+    color: #7c7f88;
+}
+
+.active:not(.hover){
+    color: #fff
+}

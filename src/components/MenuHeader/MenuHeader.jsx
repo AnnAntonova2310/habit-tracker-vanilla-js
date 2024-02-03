@@ -3,14 +3,21 @@ import NavItem from "../NavItem/NavItem.jsx";
 import ButtonExit from "../ButtonExit/ButtonExit.jsx";
 
 
-const MenuHeader = () => {
+const MenuHeader = ({isLogin}) => {
     return (
+        isLogin ?
+            <div className={'menu_header'}>
+                <NavItem text={'Поиск фильмов'} isActive/>
+                <NavItem text={'Мои фильмы'}/>
+                <NavItem text={'Анна'} isLogin/>
+                <ButtonExit text={'Войти'}/>
+            </div>
+        :
         <div className={'menu_header'}>
             <NavItem text={'Поиск фильмов'} isActive/>
-            <NavItem text={'Мои фильмы'} isActive={false}/>
-            {/* isActive не нужен всегда*/}
             <ButtonExit text={'Войти'}/>
         </div>
+
     );
 };
 

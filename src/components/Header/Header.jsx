@@ -6,6 +6,7 @@ const Header = () => {
         <div className={'header'}>
             <img className={'logo'} src={'/icons/logo.svg'} alt={'Логотип'}/>
             <MenuHeader/>
+            {/*<MenuHeader isLogin/>*/}
         </div>
     );
 };

@@ -16,3 +16,8 @@
 .active:not(.hover){
     color: #fff
 }
+
+.wrapper{
+    display: flex;
+    gap: 8px;
+}

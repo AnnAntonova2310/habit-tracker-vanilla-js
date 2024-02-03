@@ -6,15 +6,15 @@ const FormMain = () => {
 
     const addJournalItem=(e)=>{
         e.preventDefault()
-        const formData = new FormData(e.target)
-        const formProps = Object.fromEntries(formData)
-        console.log(formData)
-        console.log(formProps)
+        // const formData = new FormData(e.target)
+        // const formProps = Object.fromEntries(formData)
+        // console.log(formData)
+        // console.log(formProps)
     }
 
     return (
         <form className={'form_main'} onSubmit={addJournalItem}>
-            <Input/>
+            <Input isSearch/>
             <Button type={'submit'} text={'Искать'} onClick={() => {
                 console.log('Click')
             }}/>

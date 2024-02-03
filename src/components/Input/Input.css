@@ -1,8 +1,23 @@
-.input{
+.wrapper {
+    position: relative
+}
+
+.input {
     width: 384px;
     height: 64px;
     border-radius: 16px;
     border: 1px solid #323B54;
     margin-right: 8px;
+    padding-left: 16px;
     background-color: rgba(0, 0, 0, 0.10);
+}
+
+.padding_search {
+    padding-left: 56px;
+}
+
+.search {
+    position: absolute;
+    top: 22px;
+    left: 16px;
 }

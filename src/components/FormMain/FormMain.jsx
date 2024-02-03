@@ -1,13 +1,8 @@
 import './FormMain.css'
 import Button from "../Button/Button.jsx";
-import {useState} from "react";
+import Input from "../Input/Input.jsx";
 
 const FormMain = () => {
-    const [inputData, setInputData] = useState('')
-
-    const onChange = (e) => {
-        setInputData(e.currentTarget.value)
-    }
 
     const addJournalItem=(e)=>{
         e.preventDefault()
@@ -19,7 +14,7 @@ const FormMain = () => {
 
     return (
         <form className={'form_main'} onSubmit={addJournalItem}>
-            <input name={'text'} className={'input'} value={inputData} onChange={onChange}/>
+            <Input/>
             <Button type={'submit'} text={'Искать'} onClick={() => {
                 console.log('Click')
             }}/>
